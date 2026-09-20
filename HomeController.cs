@@ -522,10 +522,11 @@ public class HomeController : Controller
         {
             TextBody =
                 $"Merhaba {displayName},\n\n" +
+                "Form dolduruldu.\n" +
                 "Bu e-postanın ekinde yalnızca formun son doldurulan verilerinden oluşturulan tek PDF vardır.\n\n" +
                 $"Dosya: {fileName}\n" +
                 $"Tarih: {DateTime.Now:dd/MM/yyyy HH:mm}\n\n" +
-                "CV Maker"
+                "https://github.com/birgullayaz/CV_MAKER"
         };
 
         builder.Attachments.Clear();
